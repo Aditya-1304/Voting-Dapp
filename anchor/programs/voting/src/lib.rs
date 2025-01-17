@@ -2,7 +2,7 @@
 
 use anchor_lang::prelude::*;
 
-declare_id!("coUnmi3oBUtwtd9fjeAvSsJssXh5A5xyPbhpewyzRVF");
+declare_id!("yVBqpzNUsUsmvbho3T6hX5aHXgiV1mt51SWmtBNTK9u");
 
 #[program]
 pub mod voting {
@@ -69,7 +69,6 @@ pub struct InitializeCandidates<'info> {
   #[account(mut)]
   pub signer : Signer<'info>,
   #[account(
-    mut,
     seeds = [poll_id.to_le_bytes().as_ref()],
     bump,
     

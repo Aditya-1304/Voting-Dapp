@@ -7,7 +7,7 @@ import { BankrunProvider } from 'anchor-bankrun';
 
 const IDL = require('../target/idl/voting.json');
 
-const votingAddress = new PublicKey("coUnmi3oBUtwtd9fjeAvSsJssXh5A5xyPbhpewyzRVF")
+const votingAddress = new PublicKey("yVBqpzNUsUsmvbho3T6hX5aHXgiV1mt51SWmtBNTK9u")
 
 describe('voting', () => {
   // Configure the client to use the local cluster.
@@ -77,7 +77,7 @@ describe('voting', () => {
     expect(crunchyCandidate.canditateVotes.toNumber()).toEqual(0);
 
     const [smoothAddress] = PublicKey.findProgramAddressSync(
-      [new anchor.BN(1).toArrayLike(Buffer,'le',8) ,Buffer.from("crunchy")],
+      [new anchor.BN(1).toArrayLike(Buffer,'le',8) ,Buffer.from("smooth")],
       votingAddress
     );
     const smoothCandidate = await votingProgram.account.candidate.fetch(smoothAddress);

@@ -1,5 +1,5 @@
 {
-  "address": "coUnmi3oBUtwtd9fjeAvSsJssXh5A5xyPbhpewyzRVF",
+  "address": "yVBqpzNUsUsmvbho3T6hX5aHXgiV1mt51SWmtBNTK9u",
   "metadata": {
     "name": "voting",
     "version": "0.1.0",
@@ -27,7 +27,6 @@
         },
         {
           "name": "poll",
-          "writable": true,
           "pda": {
             "seeds": [
               {
